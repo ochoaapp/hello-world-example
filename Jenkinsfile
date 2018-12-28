@@ -12,7 +12,7 @@ pipeline {
           sh 'mvn clean install'
         }
 
-        withMaven(maven: 'M3', jdk: '/usr/java/jdk1.8.0_191-amd64/bin/')
+        withMaven(maven: 'M3', jdk: '/usr/bin/')
       }
     }
     stage('Results') {

@@ -12,7 +12,7 @@ pipeline {
           sh 'mvn clean install'
         }
 
-        withMaven(maven: 'M3', jdk: '/usr/bin/javac')
+        withMaven(maven: 'M3')
       }
     }
     stage('Results') {

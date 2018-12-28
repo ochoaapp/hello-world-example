@@ -12,7 +12,6 @@ pipeline {
           sh 'mvn clean install'
         }
 
-        withMaven(maven: 'M3')
       }
     }
     stage('Results') {
